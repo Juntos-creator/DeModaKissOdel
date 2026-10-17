@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De Moda KissOdel — High Fashion Portfolio for SHEIN X</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav">
+    <a href="#home" class="logo">
+      <span class="logo-1">De Moda</span>
+      <span class="logo-2">KissOdel</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#techpacks">Tech Packs</a></li>
+      <li><a href="#embroidery">Embroidery & Materials</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div>
+    <div class="section-label">Application for SHEIN X Designer Program 2026</div>
+    <h1 class="serif">De Moda KissOdel —<br>High Fashion<br><span>Portfolio for SHEIN X</span></h1>
+    <p class="sub">Haute Couture reimagined through asymmetrical silhouettes, artisanal gold-thread embroidery, and sculptural organza draping. A proposal for the next generation of luxury.</p>
+    <a href="#collections" class="btn">Explore Collections</a>
+    <p class="sans" style="margin-top:16px;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;opacity:0.4">Curated for SHEIN X • Paris • Santo Domingo</p>
+  </div>
+  <div class="hero-img">
+    <img src="./MIS_DISENOS/LOOK 2/LOOK 2 DISE O.jpeg" alt="Hero - De Moda KissOdel">
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections" class="section">
+  <div class="section-label">The Collection — Vol. I</div>
+  <h2 class="section-title serif">Asymmetrical Couture</h2>
+  <p class="sans" style="margin-top:12px;max-width:600px;opacity:0.6;font-size:14px;line-height:1.6">Each piece is designed with sculptural draping and artisanal gold embroidery. Click any look to view details.</p>
+  <div id="collection-grid" class="grid"></div>
+</section>
+
+<!-- TECH PACKS -->
+<section id="techpacks" class="tech">
+  <div class="tech-inner">
+    <div class="section-label" style="color:var(--gold-light)">Technical Showcase</div>
+    <h2 class="section-title serif" style="color:var(--ivory)">Tech Packs & Spec Sheets</h2>
+    <div id="tech-tabs" class="tabs"></div>
+    <div class="tech-content">
+      <div class="tech-img"><img id="tech-image" src="./MIS_DISENOS/LOOK 1/LOOK 1 DISE O.jpeg" alt="Tech"></div>
+      <div>
+        <div class="toggle">
+          <button class="active">Spec Sheet</button>
+          <button onclick="alert('Illustration view - reemplaza con tu flat sketch')">Illustration</button>
+        </div>
+        <div id="tech-spec" class="spec-table"></div>
+        <a href="./portfolio.pdf" class="btn" style="margin-top:24px;border-color:var(--gold-light);color:var(--gold-light)" download>Download Spec PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMBROIDERY -->
+<section id="embroidery" class="section">
+  <div class="section-label">Craftsmanship</div>
+  <h2 class="section-title serif">Embroidery & Textiles</h2>
+  <p class="sans" style="margin-top:12px;max-width:600px;opacity:0.6;font-size:14px">Artisanal gold-thread embroidery on transparent lace — baroque patterns, couture finishing.</p>
+  <div class="masonry">
+    <img src="./MIS_DISENOS/LOOK 1/LOOK 1 ACUARELA.jpeg" alt="Gold embroidery macro">
+    <img src="./MIS_DISENOS/LOOK 1/LOOK 1 DISE O.jpeg" alt="Detail">
+    <img src="./MIS_DISENOS/LOOK 3/LOOK 3 DISE O.jpeg" alt="Detail">
+  </div>
+  <div style="margin-top:24px;display:flex;gap:8px;flex-wrap:wrap">
+    <span style="border:1px solid var(--line);padding:6px 12px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase">Gold Metallic Thread</span>
+    <span style="border:1px solid var(--line);padding:6px 12px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase">Chantilly Lace</span>
+    <span style="border:1px solid var(--line);padding:6px 12px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase">Silk Organza</span>
+    <span style="border:1px solid var(--line);padding:6px 12px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase">Chocolate Suede</span>
+    <span style="border:1px solid var(--line);padding:6px 12px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase">Burgundy Wine Lace</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section" style="border-top:1px solid var(--line)">
+  <div class="section-label">About</div>
+  <h2 class="section-title serif">Designed in Dominican Republic<br><span style="font-style:italic;color:var(--gold)">for Global Luxury</span></h2>
+  <p class="sans" style="margin-top:24px;max-width:680px;line-height:1.9;opacity:0.7">De Moda KissOdel is a high-fashion atelier focused on asymmetrical silhouettes, sculptural organza and gold-thread embroidery. Each piece balances couture craftsmanship with scalability for SHEIN X production.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="section-label">Contact — SHEIN X Application</div>
+  <h2 class="section-title serif">Let's Create for SHEIN X</h2>
+  <div class="contact-grid">
+    <form onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente.');">
+      <input class="input" placeholder="Nombre / Name" required>
+      <input class="input" type="email" placeholder="Email" required style="margin-top:20px">
+      <textarea class="input" placeholder="Mensaje / Message" style="margin-top:20px"></textarea>
+      <button class="btn" style="margin-top:24px;width:100%">Send Application Inquiry</button>
+    </form>
+    <div>
+      <p class="sans" style="font-size:13px;line-height:1.8;opacity:0.7">This portfolio is prepared for the SHEIN X Designer Program 2026. All tech packs include fabrics, trims, stitch types and callouts in English ready for production.</p>
+      <a href="./portfolio.pdf" class="btn" style="margin-top:24px;display:block;text-align:center;background:var(--black);color:var(--ivory)" download>Download Full Technical Portfolio PDF</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div style="font-family:'Playfair Display';letter-spacing:0.18em;text-transform:uppercase">De Moda <span style="font-style:italic;color:var(--gold-light)">KissOdel</span></div>
+  <p class="sans" style="margin-top:12px;font-size:11px;opacity:0.6">© 2026 De Moda KissOdel — Application for SHEIN X Designer Program</p>
+  <p class="sans" style="margin-top:8px;font-size:11px"><a href="https://instagram.com/demodakissodel" target="_blank">Instagram @demodakissodel</a></p>
+</footer>
+
+<!-- MODAL -->
+<div id="modal" style="display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;padding:24px" onclick="closeModal()">
+  <div style="background:var(--ivory);max-width:800px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden" onclick="event.stopPropagation()">
+    <img id="modal-img" src="" style="width:100%;height:100%;object-fit:cover;aspect-ratio:3/4">
+    <div style="padding:32px">
+      <h3 id="modal-title" class="serif" style="font-size:26px"></h3>
+      <p id="modal-desc" class="sans" style="margin-top:12px;font-size:13px;line-height:1.7;opacity:0.7"></p>
+      <button class="btn" style="margin-top:24px;width:100%" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="./js/data.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

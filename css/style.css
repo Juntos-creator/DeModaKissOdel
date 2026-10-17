@@ -1,0 +1,117 @@
+
+/* ============================================
+   De Moda KissOdel — High Fashion Portfolio
+   Luxury Boutique for SHEIN X — 2026
+   ============================================
+   PALETA:
+   --black: #0d0d0d, --black2: #121212
+   --gold: #d4af37, --gold-light: #e5c158
+   --burgundy: #58111a, --burgundy2: #6b1d28
+   --chocolate: #3d2314, --ivory: #fbf9f5
+   
+   COMO AGREGAR DISEÑOS: Solo edita js/data.js
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root{
+  --black:#0d0d0d;
+  --black2:#121212;
+  --gold:#d4af37;
+  --gold-light:#e5c158;
+  --burgundy:#58111a;
+  --burgundy2:#6b1d28;
+  --chocolate:#3d2314;
+  --ivory:#fbf9f5;
+  --line: rgba(212,175,55,0.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--black);font-family:'Inter',sans-serif;antialiased}
+.serif{font-family:'Playfair Display',serif}
+.serif2{font-family:'Cormorant Garamond',serif}
+.sans{font-family:'Montserrat',sans-serif}
+
+/* HEADER */
+.header{position:sticky;top:0;z-index:50;background:rgba(251,249,245,0.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:18px 24px}
+.logo{display:flex;gap:6px;align-items:baseline;text-decoration:none}
+.logo-1{font-family:'Playfair Display';letter-spacing:0.18em;text-transform:uppercase;font-size:18px;color:var(--black)}
+.logo-2{font-family:'Cormorant Garamond';font-style:italic;color:var(--gold);font-size:19px}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-family:'Montserrat';font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--black);text-decoration:none;transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+.hamburger{display:none;background:none;border:none;cursor:pointer}
+
+/* HERO */
+.hero{max-width:1440px;margin:0 auto;padding:90px 24px 60px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center}
+.hero h1{font-family:'Playfair Display';font-size:clamp(42px,6vw,78px);line-height:0.95;letter-spacing:-0.02em}
+.hero h1 span{color:var(--gold);font-style:italic}
+.hero p.sub{font-family:'Montserrat';font-weight:300;margin-top:24px;font-size:16px;line-height:1.7;max-width:520px;color:rgba(13,13,13,0.7)}
+.btn{display:inline-block;margin-top:32px;padding:16px 36px;border:1px solid var(--gold);font-family:'Montserrat';font-size:11px;letter-spacing:0.22em;text-transform:uppercase;text-decoration:none;color:var(--black);transition:all .4s}
+.btn:hover{background:var(--black);color:var(--ivory);border-color:var(--black)}
+.hero-img{aspect-ratio:4/5;background:#000;overflow:hidden;border:1px solid var(--line)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+
+/* COLLECTIONS */
+.section{max-width:1440px;margin:0 auto;padding:100px 24px}
+.section-label{font-family:'Montserrat';font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.section-title{font-family:'Playfair Display';font-size:clamp(32px,4vw,52px)}
+.grid{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.card{cursor:pointer;group}
+.card-img{aspect-ratio:3/4;overflow:hidden;background:#000;border:1px solid var(--line);position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.card:hover .card-img img{transform:scale(1.06)}
+.card-overlay{position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,0.6), transparent);opacity:0;transition:opacity .4s}
+.card:hover .card-overlay{opacity:1}
+.card-info{padding:18px 0}
+.card-number{font-family:'Montserrat';font-size:10px;letter-spacing:0.2em;color:var(--gold)}
+.card-title{font-family:'Playfair Display';font-size:20px;margin-top:6px}
+.card-sub{font-family:'Montserrat';font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(0,0,0,0.5);margin-top:4px}
+
+/* TECH PACKS */
+.tech{background:var(--black);color:var(--ivory);margin-top:40px}
+.tech-inner{max-width:1440px;margin:0 auto;padding:100px 24px}
+.tabs{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.tab{padding:10px 18px;border:1px solid rgba(212,175,55,0.3);background:transparent;color:var(--ivory);font-family:'Montserrat';font-size:10px;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:all .3s}
+.tab.active{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.tech-content{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.tech-img{aspect-ratio:4/5;background:var(--ivory);overflow:hidden}
+.tech-img img{width:100%;height:100%;object-fit:cover}
+.spec-table{border:1px solid rgba(212,175,55,0.18);padding:28px}
+.spec-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:13px}
+.spec-row span:first-child{font-family:'Montserrat';font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold-light)}
+.toggle{display:flex;gap:8px;margin-bottom:24px}
+.toggle button{padding:8px 14px;border:1px solid var(--line);background:transparent;color:var(--ivory);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer}
+.toggle button.active{background:var(--ivory);color:var(--black)}
+
+/* EMBROIDERY */
+.masonry{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:40px}
+.masonry img{width:100%;aspect-ratio:1;object-fit:cover;border:1px solid var(--line)}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:40px}
+.input{width:100%;padding:14px 0;background:transparent;border:none;border-bottom:1px solid var(--line);font-family:'Montserrat';font-size:13px;outline:none;transition:border-color .3s}
+.input:focus{border-color:var(--gold)}
+textarea.input{resize:none;height:100px}
+
+/* FOOTER */
+.footer{background:var(--chocolate);color:var(--ivory);padding:60px 24px;margin-top:80px;text-align:center}
+.footer a{color:var(--gold-light);text-decoration:none}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:all .8s}
+.reveal.in-view{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr}
+  .tech-content{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .hamburger{display:block}
+  .masonry{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .grid{grid-template-columns:1fr}
+}

@@ -1,5 +1,5 @@
 // ============================================
-// De Moda KissOdel — Datos estructurados del Look 1
+// De Moda KissOdel — Datos de la Colección (Look 1 & Look 2)
 // ============================================
 
 const COLLECTION_DATA = [
@@ -9,19 +9,15 @@ const COLLECTION_DATA = [
     title: "Look 1 - Conjunto Estructural con Rosa",
     subtitle: "Alta Costura — Frente, Espalda e Ilustración",
     category: "TOPS & PANTS",
-    // Imagen principal que se ve en la tarjeta de colecciones
     image: "./MIS_DISENOS/LOOK1/LOOK1_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpeg",
-    // Imágenes secundarias para la vista de colección o detalles (Frente y Espalda)
     secondaryImage: "./MIS_DISENOS/LOOK1/LOOK1_Diseno_Espalda_Fondo_Blanco.jpeg",
     description: "Conjunto de alta costura estructurado en tonos beige, con detalles de rosa esculpida y silueta estilizada.",
     
-    // Imágenes para la sección de ilustración / bocetos
     illustrations: [
       "./MIS_DISENOS/LOOK1/look1_acuarela.jpeg",
       "./MIS_DISENOS/LOOK1/look1_lapiz.jpeg"
     ],
 
-    // Materiales detallados con sus respectivas imágenes
     materialsList: [
       {
         name: "Stretch Wool Crepe Beige",
@@ -50,6 +46,48 @@ const COLLECTION_DATA = [
       finishing: "Hand-rolled edges, sculpted textile rose",
       measurements: "Bust 88cm / Waist 68cm / Inseam 85cm"
     }
+  },
+  {
+    id: 2,
+    number: "02",
+    title: "Look 2 - Vestido Velvet Burgundy & Mangas Organza",
+    subtitle: "Alta Costura — Terciopelo Borgoña & Verde Olivo",
+    category: "DRESSES",
+    
+    // Imagen frontal principal (Ghost Mannequin / Frente)
+    image: "./MIS_DISENOS/LOOK 2/LOOK2_Diseno_Frente_Ghost_Mannequin_Fondo_Blanco.jpg",
+    
+    // Vista posterior (Espalda)
+    secondaryImage: "./MIS_DISENOS/LOOK 2/LOOK2_Diseno_Espalda_Fondo_Blanco.jpg",
+    
+    description: "Vestido largo de alta costura en terciopelo elástico borgoña con abertura lateral profunda y mangas de cascada en organza cristal verde olivo.",
+    
+    // Ilustración / Boceto y Moodboard completo
+    illustrations: [
+      "./MIS_DISENOS/LOOK 2/loo2_acuarela.jpeg",
+      "./MIS_DISENOS/LOOK 2/LOOK2_Board_Completo_Textiles_Reales_FW26.jpg"
+    ],
+
+    // Muestras de textiles para el Look 2
+    materialsList: [
+      {
+        name: "Stretch Velvet Burgundy (90% Poly / 10% Spandex)",
+        image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex.jpg"
+      },
+      {
+        name: "Crystal Organza Olive Green (100% Poly)",
+        image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_2_Crystal_Organza_Olive_Green_100Poly.jpg"
+      }
+    ],
+
+    materials: ["Stretch Velvet Burgundy", "Crystal Organza Olive Green"],
+    spec: {
+      fabric: "Stretch Velvet 320GSM Burgundy #4B0082 / Crystal Organza Olive Green",
+      lining: "Stretch Silk Habotai Burgundy",
+      trims: "Invisible back zipper YKK, elastic neck casing",
+      stitch: "Overlock 4-thread stretch, micro rolled hem on ruffles",
+      finishing: "Tiered ruffle sleeve assembly, leg slit edge binding",
+      measurements: "Bust 86cm / Waist 66cm / Length 155cm"
+    }
   }
-  // Aquí puedes seguir agregando los siguientes looks (Look 2, Look 3, etc.)
 ];

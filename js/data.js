@@ -89,21 +89,16 @@ const COLLECTION_DATA = [
     title: "Look 3 - Corset Estructural & Shorts Taupe",
     subtitle: "Alta Costura — Ponte di Roma, Organza Ivory & Power Mesh",
     category: "CORSET & SHORTS",
-    
-    // Imagen frontal del diseño
     image: "./MIS_DISENOS/LOOK 3/LOOK3_Diseno_Frente_Ghost_Mannequin_Fondo_Blanco.jpg",
     secondaryImage: "./MIS_DISENOS/LOOK 3/LOOK3_Diseno_Frente_Ghost_Mannequin_Fondo_Blanco.jpg",
-    
     description: "Conjunto de corset esculpido y shorts en tono taupe con sobrefalda dramática en organza marfil y capas de malla power mesh.",
     
-    // Ilustraciones (Acuarela, Boceto a lápiz y Board Técnico)
     illustrations: [
       "./MIS_DISENOS/LOOK 3/LOOK 3_ACUARELA.jpeg",
       "./MIS_DISENOS/LOOK 3/LOOK 3_LAPIZ.jpeg",
       "./MIS_DISENOS/LOOK 3/LOOK3_Board_Completo_Textiles_Reales_FW26.jpg"
     ],
 
-    // Muestras de materiales del Look 3
     materialsList: [
       {
         name: "Ponte di Roma Taupe (92% Poly / 8% Spandex)",

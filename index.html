@@ -121,13 +121,11 @@
 
 <!-- MODAL -->
 <div id="modal" style="display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;padding:24px" onclick="closeModal()">
-  <div style="background:var(--ivory);max-width:800px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden" onclick="event.stopPropagation()">
-    <img id="modal-img" src="" style="width:100%;height:100%;object-fit:cover;aspect-ratio:3/4">
-    <div style="padding:32px">
-      <h3 id="modal-title" class="serif" style="font-size:26px"></h3>
-      <p id="modal-desc" class="sans" style="margin-top:12px;font-size:13px;line-height:1.7;opacity:0.7"></p>
-      <button class="btn" style="margin-top:24px;width:100%" onclick="closeModal()">Close</button>
+  <div style="background:var(--ivory);max-width:850px;width:100%;padding:32px;overflow-y:auto;max-height:90vh;" onclick="event.stopPropagation()">
+    <div id="modal-content-area">
+      <!-- Aquí se cargan dinámicamente frente, espalda y descripciones -->
     </div>
+    <button class="btn" style="margin-top:24px;width:100%" onclick="closeModal()">Close</button>
   </div>
 </div>
 
